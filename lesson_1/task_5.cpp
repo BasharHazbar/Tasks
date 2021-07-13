@@ -10,7 +10,7 @@ int main(
     cin >> rows;
     for (int i = 0; i < rows; i++){
         for (int j = 0; j < (rows - (rows - (i + 1))); j++){
-            cout << "*";
+            cout << "* ";
         }
         cout << "\n";
     }
