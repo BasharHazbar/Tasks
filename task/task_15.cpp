@@ -13,17 +13,19 @@ int reverse_nums(int arr[],int n){
     reverse_nums(arr,n - 1);
   }
 }
-float compute_salary(float hour_work, float salary_hour_work){
+
+
+float amount_salary(float hour_work, float salary_hour_work){
  float amount_salary = hour_work * salary_hour_work;
   return amount_salary;
 }
-float tax_salary(float amount_salary,float tax){
+float amount_tax(float amount_salary,float tax){
     float amount_tax_salary = amount_salary * tax;
     return amount_tax_salary;
 }
-float salary_without_tax(float amount_salary,float tax){
-    float salary_without_tax = amount_salary - tax;
-    return salary_without_tax;
+float net_salary(float amount_salary,float tax){
+    float net_salary = amount_salary - tax;
+    return net_salary;
 }
 int main(){
     int n = 50;
@@ -41,10 +43,10 @@ int main(){
     cin >> salary_hour_work;
     cout << "enter how much tax: ";
     cin >> tax;
-    float amount_salary = compute_salary(hour_work,salary_hour_work);
-    float amount_tax = tax_salary(amount_salary,tax);
-    cout << "amount of your salary withot tax is: " << amount_salary << "$" << endl;
-    cout << "the tax of salary is: " << tax_salary(amount_salary,tax) << "$" << endl;
-    cout << "the amount of salary without of tax is: " << salary_without_tax(amount_salary ,amount_tax) << "$";
+    float x = amount_salary(hour_work,salary_hour_work);
+    float y = amount_tax(x,tax);
+    cout << "amount of your salary is: " << x << "$" << endl;
+    cout << "the tax of salary is: " << amount_tax(x,tax) << "$" << endl;
+    cout << "the amount of net salary is: " << net_salary(x ,y) << "$";
 return 0;
 }
