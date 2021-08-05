@@ -23,8 +23,8 @@ float amount_tax(float amount_salary,float tax){
     float amount_tax_salary = amount_salary * tax;
     return amount_tax_salary;
 }
-float net_salary(float amount_salary,float tax){
-    float net_salary = amount_salary - tax;
+float net_salary(float amount_salary,float amount_tax){
+    float net_salary = amount_salary - amount_tax;
     return net_salary;
 }
 int main(){
