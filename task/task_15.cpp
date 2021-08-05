@@ -7,16 +7,27 @@ using namespace std;
 
 
 
-void reverse_nums(int n){
-  if (n <= 0){
-    return;
+int print_num(int n){
+  if (n > 50){
+    return 0;
   }
   else {
     cout << n << " ";
-    reverse_nums(n - 1);
+    print_num(n + 1);
+
   }
 }
 
+int reserve_num(int n){
+  if (n < 1){
+    return 0;
+  }
+  else {
+    cout << n << " ";
+    reserve_num(n - 1);
+
+  }
+}
 
 
 float amount_salary(float hour_work, float salary_hour_work){
@@ -33,7 +44,11 @@ float net_salary(float amount_salary,float amount_tax){
 }
 int main(){
 
-    reverse_nums(50);
+
+    print_num(1);
+    cout << "\n===============\n";
+    reserve_num(50);
+
 
     cout << "\n===============================\n";
     float hour_work,salary_hour_work,tax;
