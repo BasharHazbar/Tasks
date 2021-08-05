@@ -4,15 +4,19 @@
 #include <array>
 #include <string>
 using namespace std;
-int reverse_nums(int arr[],int n){
+
+
+
+void reverse_nums(int n){
   if (n <= 0){
-    return 0;
+    return;
   }
   else {
-    cout << arr[n] << " ";
-    reverse_nums(arr,n - 1);
+    cout << n << " ";
+    reverse_nums(n - 1);
   }
 }
+
 
 
 float amount_salary(float hour_work, float salary_hour_work){
@@ -28,12 +32,8 @@ float net_salary(float amount_salary,float amount_tax){
     return net_salary;
 }
 int main(){
-    int n = 50;
-    int arr[n],i;
-    for (i = 1; i <= n; i++){
-        arr[i] = i;
-    }
-    reverse_nums(arr,n);
+
+    reverse_nums(50);
 
     cout << "\n===============================\n";
     float hour_work,salary_hour_work,tax;
