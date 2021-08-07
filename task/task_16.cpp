@@ -10,7 +10,7 @@ void letters(){
  string word;
  cout << "enter any words: ";
  cin >> word;
- int letter_upper = 0,letter_lower = 0,length = 0,i;
+ int i,letter_upper = 0,letter_lower = 0;
 
  for (i = 0; i < word.length(); i++){
     if (word[i] >= 'A' && word[i] <= 'Z'){
