@@ -15,15 +15,17 @@ void dis_geomatric_series(){
     cin >> e;
     cout << "enter number of x: ";
     cin >> x;
+    cout << "1 + ";
     for (i = s; i <= e; i++){
         for (j = 1; j <= i; j++){
             power *= x;
         }
-        cout << x << " ^ " << i << " = " << power << endl;
+
+        cout << power << " + ";
         total += power;
         power = 1;
     }
-    cout << "the total of series is: " << total;
+    cout << " = " << total;
 }
 
 int main(){
