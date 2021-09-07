@@ -67,24 +67,7 @@ int main(){
     cout << "the name of pr_5 is: " << pr_5.name << endl;
     cout << "the age of pr_52 is: " << pr_5.age << endl;
 
-    /*
-    for (i = 1; i <= 5; i++){
-        cout << "enter id of pr_" << i << ": ";
-        cin >> pr_1.id;
-        cout << "enter name of pr_" << i << ": ";
-        cin >> pr_1.name;
-        cout << "enter id age pr_" << i << ": ";
-        cin >> pr_1.age;
-    }
 
-    for (i = 1; i <= 5; i++){
-        cout << "enter id of pr_" << i << " is: " << pr_i.id << endl;
-        cout << "enter name of pr_" << i << " is: " << pr_i.name << endl;
-        cout << "enter age of pr_" << i << " is: " << pr_i.age << endl;
-    }
-
-
-    */
 
 return 0;
 }
