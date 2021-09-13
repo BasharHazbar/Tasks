@@ -43,10 +43,10 @@ int main(){
 
     // level => 2
 
-    int i,j,n = 2;
+    int i,j,n = 3;
     student stud[n];
     for (i = 0; i < n; i++){
-        cout << "enter name of student_" << i + 1<< " : ";
+        cout << "enter name of student_5" << i + 1<< " : ";
         getline(cin,stud[i].name);
     }
 
