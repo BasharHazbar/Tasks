@@ -31,30 +31,35 @@ Store_user_detials(person pr[], int n){
 
 Check_user_detials(person pr[],int n){
     int i,j;
-    for (i = 0; i < n; i++){
-        for (j = 0; j < 3; j++){
-            string firstname,password;
-            cout << "enter your firstname to check: ";
-            cin >> firstname;
-            cout << "enter your password to check:: ";
-            cin >> password;
-            if (firstname == pr[i].firstname && password == pr[i].password){
+    for (i = 0; i < 3; i++){
+        string firstname,password;
+        cout << "enter your firstname to check: ";
+        cin >> firstname;
+        cout << "enter your password to check:: ";
+        cin >> password;
+        bool is_true = false;
+        for (j = 0; j < n; j++){
+            if (firstname == pr[j].firstname && password == pr[j].password){
                 cout << "the firstname and password is found and correct!" << endl;
+                is_true = true;
                 break;
             }
-            else{
-                if (j < 2){
-                    cout << "i will give chance enter agian please!" << endl;
-                }
-                else{
-                    cout << "the chance ended!";
-                }
-            }
       }
+      if(is_true){
+        break;
+      }
+      else{
+        if (i < 2){
+            cout << "i will give chance enter agian please!" << endl;
+            }
+        else{
+            cout << "the chance ended!";
+        }
+      }
+
+      }
+
     }
-
-}
-
 
 int main(){
     int n;
