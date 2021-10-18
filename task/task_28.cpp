@@ -45,7 +45,7 @@ void print_all(students st[],int n){
 }
 
 int main(){
-    int n = 4;
+    int n = 1;
    students st[n];
    add_student(st,n);
    delete_student(st,n);

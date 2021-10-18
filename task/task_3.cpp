@@ -69,4 +69,5 @@ int main(){
     cout << "the student who get largest mark is: " << name_student[mx_index] << " => his mark is: " << mx <<endl;
     cout << "the student who get smallest mark is: " << name_student[mn_index] << " => his mark is: " << mn;
 
+    return 0;
 }

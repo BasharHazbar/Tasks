@@ -11,36 +11,6 @@ struct student {
 
 int main(){
 
-    // level => 1
-    ofstream myfile;
-    myfile.open("data.txt",ios::out);
-    string text;
-    cout << "enter a sentence: ";
-    getline(cin,text);
-    myfile << text + "\n";
-    myfile.close();
-
-
-    ifstream myfile_1;
-    myfile_1.open("data.txt", ios::in );
-    string read;
-    while (getline(myfile_1,read)){
-    cout << read << endl;
-    int counter = 0;
-    for (int i = 0; read[i] != '\0'; i++){
-        if (read[i] >= 'a' && read[i] <= 'z'){
-            counter++;
-        }
-        else if (read[i] >= 'A' && read[i] <= 'Z'){
-            counter++;
-        }
-    }
-    cout << "count of letters is " << counter << endl;
-    }
-    myfile_1.close();
-    cout << endl;
-
-
     // level => 2
 
     int i,j,n = 3;

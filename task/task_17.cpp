@@ -6,31 +6,22 @@
 using namespace std;
 
 void letter_uppercase(){
-
 char i = 'A';
-
 do {
     cout << i << " ";
     i++;
 } while(i <= 'Z');
 
-
 }
-
 void letter_lowercase(){
-
 char i = 'a';
-
 do {
     cout << i << " ";
     i++;
 } while(i <= 'z');
 
-
 }
-
 void pyramid_pattern(){
-
 int i,j,n;
 cout << "enter number of rows: ";
 cin >> n;
@@ -45,10 +36,7 @@ for (i = 0; i < n; i++){
     }
     cout << endl;
 }
-
-
 }
-
 void dec_to_bin(int n){
  if (n < 1){
     return;
@@ -58,11 +46,9 @@ void dec_to_bin(int n){
     dec_to_bin(n / 2);
     cout << n % 2;
  }
-
 }
 
 int main(){
-
 letter_uppercase();
 cout << "\n===========================\n";
 letter_lowercase();

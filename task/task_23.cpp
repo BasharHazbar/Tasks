@@ -9,6 +9,8 @@ struct person {
     string name;
 };
 int main(){
+
+
     person pr_1,pr_2,pr_3,pr_4,pr_5;
 
     cout << "enter id of pr_1: ";

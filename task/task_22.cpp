@@ -13,9 +13,24 @@ struct book{
 };
 
 int main(){
-    int i,n;
+    int i,n,y;
     cout << "number of books do you want register: ";
-    cin >> n;
+    cin >> y;
+    if (y >= 1 && y <= 10){
+        n = y;
+    }
+    else {
+        for (i = 0; i < 3; i++){
+            cout << "you have just three chance enter again pleas: ";
+            cin >> n;
+            if (n >= 1 && n <= 10){
+                break;
+            }
+            else {
+                n = 0;
+            }
+        }
+    }
     book books[n];
     for (i = 0; i < n; i++){
         cout << "enter information about book_" << i + 1 << ": " << endl;

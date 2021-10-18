@@ -36,19 +36,8 @@ int main(){
         }
     }
 
-    cout << "total: ";
-    for (i = 0; i < n; i++){
-        int temp = 0;
-        for(j = 0; j < n; j++){
-                if(i != j){
-                    if(arr[i] == arr[j]){
-                       temp++;
-                    }
-                }
-        }
-        cout << temp;
 
-    }
+
 
 
 

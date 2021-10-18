@@ -17,34 +17,32 @@ void dis_arr(int arr[],int n,int i){
 
 }
 
-int  max_num(int arr[],int n,int mx){
-    if (n < 0){
-      return 0;
+int max_num(int arr[],int n){
+   int mx = 1, i = 0;
+   if (i < n){
+    if (arr[i] > mx){
+        mx = arr[i];
     }
-    else {
-        if (arr[n] > mx){
-            mx = arr[n];
-        }
-         max_num(arr,n - 1,mx);
-    }
-    return mx;
+    i++;
+    max_num(arr,n);
 
+   }
+   return mx;
 }
 
 
-int min_num(int arr[],int n,int mn){
-
-    if (n < 0){
-      return 0;
+int min_num(int arr[],int n){
+   int mn = 1, i = 0;
+   if (i < n){
+    if (arr[i] < mn){
+        mn = arr[i];
     }
-    else {
-        if (arr[n] < mn){
-            mn = arr[n];
-        }
-        min_num(arr,n - 1,mn);
-    }
-    return mn;
+    i++;
+    min_num(arr,n);
 
+   }
+
+   return mn;
 }
 
 int main(){
@@ -59,7 +57,7 @@ int main(){
     dis_arr(arr,n,i = 0);
     cout << endl;
 
-    cout << "the max number is: " << max_num(arr,n - 1,arr[0]) << endl;
-    cout << "the min number is: " << min_num(arr,n - 1,arr[0]);
+    cout << "the max number is: " << max_num(arr,n) << endl;
+    cout << "the min number is: " << min_num(arr,n);
     return 0;
 }

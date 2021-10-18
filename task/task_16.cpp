@@ -28,7 +28,7 @@ void letters(){
 }
 
 void check_num(){
-  int s,e,i,j,num;
+  int s,e,i,num;
   cout << "enter the start range: ";
   cin >> s;
   cout << "enter the end range: ";
